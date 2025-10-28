@@ -49,6 +49,16 @@ CRYPTO_SYMBOL_MAP = {
     "XRP": "ripple",
     "DOT": "polkadot",
     "LTC": "litecoin",
+    "USDC": "usd-coin",        
+    "DAI": "dai",              
+    "TRX": "tron",             
+    "SHIB": "shiba-inu",       
+    "AVAX": "avalanche-2",     
+    "LINK": "chainlink",       
+    "UNI": "uniswap",          
+    "BCH": "bitcoin-cash",     
+    "MATIC": "polygon",        
+    "HBAR": "hedera-hashgraph", 
     # add more if needed
 }
 
