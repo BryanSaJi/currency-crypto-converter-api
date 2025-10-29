@@ -174,10 +174,10 @@ async def get_crypto_price(symbol: str, vs_currency: str) -> float:
 
 # --- ENDPOINTS ---
 
-@app.get("/")
-def root():
-    return {"message": "Currency & Crypto Converter API (Monetizable) is running."}
-
+@app.get("/", include_in_schema=False)
+async def health_check():
+    """Endpoint to check if the API is running."""
+    return {"status": "ok", "service": "Currency & Crypto Converter API", "version": app.version}
 
 @app.get("/convert")
 async def convert(
